@@ -18,7 +18,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        primaryStage.setTitle("Welcome to my App");
+        primaryStage.setTitle("Welcome to Codecademy");
 
         // Create welcomeTitle
         Text welcomeTitle = new Text("Welcome");
