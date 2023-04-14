@@ -20,6 +20,10 @@ public class LoginPage extends Application {
     private TextField loginUsernameField;
     private PasswordField loginPasswordField;
 
+    public static void main(String[] args) {
+        launch(args);
+    }
+
     @Override
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("Login Page");
@@ -62,7 +66,6 @@ public class LoginPage extends Application {
         }
     }
 
-
     private void login() {
         String username = loginUsernameField.getText();
         String password = loginPasswordField.getText();
@@ -92,9 +95,5 @@ public class LoginPage extends Application {
         // Here you would typically check against a database or some other data source
         // Now we will use hardcoded values
         return !username.equals("testuser") && password.length() >= 8;
-    }
-
-    public static void main(String[] args) {
-        launch(args);
     }
 }
